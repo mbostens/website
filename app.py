@@ -4,8 +4,7 @@ from flask import render_template, Flask
 # Flask app setup
 app = Flask(__name__)
 CORS(app)
-app.config['DEBUG'] = True
-app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
+
 
 @app.route('/')
 def index():
