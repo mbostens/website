@@ -1,8 +1,9 @@
 from flask_cors import CORS
-from flask import render_template, Flask
+from flask import render_template, Flask, url_for
 import os
 # Flask app setup
-app = Flask(__name__)
+
+app = Flask(__name__, static_folder='templates/assets')
 CORS(app)
 
 
